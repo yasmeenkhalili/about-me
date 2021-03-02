@@ -1,4 +1,21 @@
 body {background-image: url("https://image.freepik.com/free-vector/you-are-welcome-words-by-hand_71301-222.jpg");
 background-repeat: no-repeat;
-background-position-y: 100px;
-}
+background-position-y: 250px;
+background-position-x: 300px;
+ }
+ ul  {
+     list-style-type: square;
+     padding-left: 30px;
+     color: rebeccapurple;
+    }
+  ol{
+    list-style-type: decimal;
+    padding-left: 30px;
+    color: lightseagreen;
+  }
+h1 {color: crimson; font-size: 30px;border-style: double;padding-left:600px;}
+h1 {
+    border-style: solid;
+    border-width: medium;
+    border-inline:inherit;
+  }
