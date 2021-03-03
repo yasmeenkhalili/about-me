@@ -78,7 +78,6 @@ if (parseInt(guessAge)===age){
   alert('Great you got it ');
   score=score+1;
 }
-
 while(parseInt(guessAge)!==age && i<3){
   alert('My age is between 20 & 35');
   if (parseInt(guessAge)>age){
@@ -89,10 +88,9 @@ while(parseInt(guessAge)!==age && i<3){
       alert('Great you got it');
       score=score+1;
       break;
-    }else {
+    }else{
       i++;
     }
-
   }else if (parseInt(guessAge)<age){
     alert('I am bigger than this');
     console.log(guessAge);
@@ -104,8 +102,6 @@ while(parseInt(guessAge)!==age && i<3){
     }else{
       i++;
     }
-
-
   }
 }
 alert('My age is 28');
