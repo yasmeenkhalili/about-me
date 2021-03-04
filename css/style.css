@@ -2,6 +2,9 @@ body {background-image: url("https://image.freepik.com/free-vector/you-are-welco
 background-repeat: no-repeat;
 background-position-y: 250px;
 background-position-x: 300px;
+background-clip: padding-box;
+background-position: right;
+
  }
  ul  {
      list-style-type: square;
@@ -19,3 +22,10 @@ h1 {
     border-width: medium;
     border-inline:inherit;
   }
+p {
+border-style: dotted;
+display:inline-block; 
+margin: 10px;
+padding: 5px;
+
+}
