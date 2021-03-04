@@ -68,7 +68,7 @@ function moreInfo(){
   }else {alert('ooops, Wrong data!');
     moreInfo();}}
 moreInfo();
-
+function guessNumber (){
 let age=28;
 let guessAge=prompt('Guess my age');
 let i =0;
@@ -105,7 +105,9 @@ while(parseInt(guessAge)!==age && i<3){
   }
 }
 alert('My age is 28');
+}guessNumber();
 
+function guessBrotherName(){
 let brothersName=['SULAIMAN', 'MONTHER', 'OSAMA', 'MOSTAFA'];
 let y=0;
 let guessName=prompt('Guess one of the name of my brothers');
@@ -127,6 +129,6 @@ if (guessName===brothersName[0] || guessName===brothersName[1] || guessName===br
   }
   alert ('My brothers names are '+ brothersName);
 }
-
+} guessBrotherName();
 alert('Your score is '+ score);
 alert ('Nice to meet you' + ' ' + Name + ' '+ 'I hope to meet you face to face soon, Goodbye ');
