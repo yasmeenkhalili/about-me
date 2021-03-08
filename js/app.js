@@ -63,15 +63,26 @@ function guessNumber (){
   let age=28;
   let guessAge=prompt('Guess my age');
   let i =0;
-  guessAge=parseInt(guessAge);
   if (parseInt(guessAge)===age){
     alert('Great you got it ');
     score=score+1;
   }
   while(parseInt(guessAge)!==age && i<3){
-    alert('My age is between 20 & 35');
-    if (parseInt(guessAge)>age){
-      alert('No I am smaller than this');
+
+    // if (typeof guessAge==='string'){
+    //   alert('No You should enter a number !');
+    //   guessAge=prompt('Guess my age');
+    //   if (parseInt(guessAge)===age){
+    //     alert('Great you got it');
+    //     score=score+1;
+    //     break;
+    //   }else{
+    //     i++;
+    //   }
+    // }
+
+    if (parseInt(guessAge)>age || typeof guessAge==='string' ){
+      alert('ooops, here is some hints: you should enter a number and my age is between 20-30');
       guessAge=prompt('Guess my age');
       if (parseInt(guessAge)===age){
         alert('Great you got it');
@@ -80,15 +91,17 @@ function guessNumber (){
       }else{
         i++;
       }
-    }else if (parseInt(guessAge)<age){
-      alert('I am bigger than this');
-      guessAge=prompt('Guess my age');
-      if (parseInt(guessAge)===age){
-        alert('Great you got it');
-        score=score+1;
-        break;
-      }else{
-        i++;
+
+      if (parseInt(guessAge)<age || typeof guessAge==='string'){
+        alert('ooops, here is some hints: you should enter a number and my age is between 20-30');
+        guessAge=prompt('Guess my age');
+        if (parseInt(guessAge)===age){
+          alert('Great you got it');
+          score=score+1;
+          break;
+        }else{
+          i++;
+        }
       }
     }
   }
